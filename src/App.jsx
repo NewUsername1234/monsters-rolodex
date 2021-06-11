@@ -19,8 +19,8 @@ class App extends Component {
 			.catch((e) => console.log(e));
 	}
 
-	onSearchChange = async (e) =>
-		await this.setState({ searchField: e.target.value });
+	onSearchChange = (event) =>
+		 this.setState({ searchField: event.target.value });
 
 	render() {
 		const { monsters, searchField } = this.state;
